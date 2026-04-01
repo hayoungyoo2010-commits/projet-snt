@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>La photographie numérique</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html">Histoire</a>
+            <a href="capteur.html">Capteur</a>
+            <a href="traitement.html">Traitement</a>
+            <a href="exif.html">EXIF</a>
+        </nav>
+    </header>
+    <main>
+        <h1>La photographie numérique</h1>
+        <!-- SECTION TRAITEMENT D'IMAGE -->
+    <section id="traitement">
+        <div class="card">
+            <h2> 4. Traitement d'image : du RAW au JPEG</h2>
+            <div class="img-wrapper">
+                <a href="https://fr.wikipedia.org/wiki/Traitement_d%27image" target="_blank">
+                    <img src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?w=800" alt="Appareil photo vintage">
+    </a>
+                <p class="source">Cliquez sur l'image pour lire l’article Wikipédia</p>
+            </div>
+            <p>Après la capture, l’image passe par une chaîne de traitements :</p>
+            <ol>
+                <li><strong>Dématriçage</strong> : reconstruction des couleurs à partir du filtre de Bayer.</li>
+                <li><strong>Correction gamma</strong> : adaptation à la vision humaine.</li>
+                <li><strong>Réduction du bruit</strong> & accentuation (netteté).</li>
+                <li><strong>Compression</strong> (JPEG avec perte) ou archivage sans perte (TIFF, PNG).</li>
+            </ol>
+            <h3> Comparaison des formats</h3>
+            <table>
+                <thead><tr><th>Format</th><th>Compression</th><th>Profondeur bits</th><th>Utilisation typique</th></tr></thead>
+                <tbody>
+                    <tr><td>RAW</td><td>Aucune / sans perte</td><td>12-16 bits/canal</td><td>Post‑traitement pro</td></tr>
+                    <tr><td>JPEG</td><td>Avec perte</td><td>8 bits/canal</td><td>Web, partage, usage courant</td></tr>
+                    <tr><td>TIFF</td><td>Sans perte</td><td>8 ou 16 bits</td><td>Impression, archivage</td></tr>
+                    <tr><td>HEIF</td><td>Moderne avec perte/perte</td><td>10+ bits</td><td>Smartphones (Apple, Android)</td></tr>
+                </tbody>
+            </table>
+    </main>
+</body>
+</html>
