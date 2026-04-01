@@ -2,7 +2,7 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <title>La photographie numérique</title>
+    <title>La photographie numérique - Traitement d'image</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -16,33 +16,100 @@
     </header>
     <main>
         <h1>La photographie numérique</h1>
+        
         <!-- SECTION TRAITEMENT D'IMAGE -->
-    <section id="traitement">
-        <div class="card">
-            <h2> 4. Traitement d'image : du RAW au JPEG</h2>
-            <div class="img-wrapper">
-                <a href="https://fr.wikipedia.org/wiki/Traitement_d%27image" target="_blank">
-                    <img src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?w=800" alt="Appareil photo vintage">
-    </a>
-                <p class="source">Cliquez sur l'image pour lire l’article Wikipédia</p>
+        <section id="traitement">
+            <div class="card">
+                <h2>4. Traitement d'image : du RAW au JPEG</h2>
+                
+                <!-- IMAGE AVEC LIEN -->
+                <div class="img-wrapper">
+                    <a href="https://fr.wikipedia.org/wiki/Traitement_d%27image" target="_blank">
+                        <img src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?w=800" 
+                             alt="Traitement d'image" 
+                             width="600">
+                    </a>
+                    <p class="source">Cliquez sur l'image pour lire l'article Wikipédia</p>
+                </div>
+                
+                <p>Après la capture, l'image passe par une chaîne de traitements :</p>
+                
+                <!-- LISTE ORDONNÉE (ol) -->
+                <h3>Étapes du traitement d'image</h3>
+                <ol>
+                    <li><strong>Dématriçage</strong> : reconstruction des couleurs à partir du filtre de Bayer.</li>
+                    <li><strong>Correction gamma</strong> : adaptation à la vision humaine.</li>
+                    <li><strong>Réduction du bruit</strong> & accentuation (netteté).</li>
+                    <li><strong>Compression</strong> (JPEG avec perte) ou archivage sans perte (TIFF, PNG).</li>
+                </ol>
+                
+                <!-- LISTE NON ORDONNÉE (ul) -->
+                <h3>Avantages et inconvénients du format RAW</h3>
+                <ul>
+                    <li><strong>Avantages</strong> : qualité maximale, contrôle total des réglages (exposition, balance des blancs), flexibilité en post-traitement.</li>
+                    <li><strong>Inconvénients</strong> : fichiers volumineux, nécessite un logiciel spécialisé, temps de traitement plus long.</li>
+                </ul>
+                
+                <!-- TABLEAU -->
+                <h3>Comparaison des formats</h3>
+                <table border="1">
+                    <thead>
+                        <tr>
+                            <th>Format</th>
+                            <th>Compression</th>
+                            <th>Profondeur bits</th>
+                            <th>Utilisation typique</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>RAW</td>
+                            <td>Aucune / sans perte</td>
+                            <td>12-16 bits/canal</td>
+                            <td>Post‑traitement pro</td>
+                        </tr>
+                        <tr>
+                            <td>JPEG</td>
+                            <td>Avec perte</td>
+                            <td>8 bits/canal</td>
+                            <td>Web, partage, usage courant</td>
+                        </tr>
+                        <tr>
+                            <td>TIFF</td>
+                            <td>Sans perte</td>
+                            <td>8 ou 16 bits</td>
+                            <td>Impression, archivage</td>
+                        </tr>
+                        <tr>
+                            <td>HEIF</td>
+                            <td>Moderne avec perte/sans perte</td>
+                            <td>10+ bits</td>
+                            <td>Smartphones (Apple, Android)</td>
+                        </tr>
+                    </tbody>
+                </table>
+                
+                <!-- VIDÉO -->
+                <h3>Vidéo : Comprendre le traitement d'image RAW vs JPEG</h3>
+                <iframe width="560" height="315" 
+                        src="https://www.youtube.com/embed/3qQZ5tW9q5A" 
+                        title="RAW vs JPEG explication" 
+                        frameborder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                        allowfullscreen>
+                </iframe>
+                
+                <!-- SOURCES -->
+                <div class="source">
+                    <p><strong>Sources :</strong> 
+                        <a href="https://pixees.fr/informatiquelycee/n_site/snt_photo.html" target="_blank">pixees.fr (SNT)</a> – 
+                        <a href="https://fr.wikipedia.org/wiki/Traitement_d%27image" target="_blank">Wikipédia - Traitement d'image</a> – 
+                        <a href="https://fr.wikipedia.org/wiki/RAW" target="_blank">Wikipédia - RAW (photographie)</a>
+                    </p>
+                    <p><em>Contenu réalisé dans le cadre du cours SNT – Photographie numérique</em></p>
+                </div>
             </div>
-            <p>Après la capture, l’image passe par une chaîne de traitements :</p>
-            <ol>
-                <li><strong>Dématriçage</strong> : reconstruction des couleurs à partir du filtre de Bayer.</li>
-                <li><strong>Correction gamma</strong> : adaptation à la vision humaine.</li>
-                <li><strong>Réduction du bruit</strong> & accentuation (netteté).</li>
-                <li><strong>Compression</strong> (JPEG avec perte) ou archivage sans perte (TIFF, PNG).</li>
-            </ol>
-            <h3> Comparaison des formats</h3>
-            <table>
-                <thead><tr><th>Format</th><th>Compression</th><th>Profondeur bits</th><th>Utilisation typique</th></tr></thead>
-                <tbody>
-                    <tr><td>RAW</td><td>Aucune / sans perte</td><td>12-16 bits/canal</td><td>Post‑traitement pro</td></tr>
-                    <tr><td>JPEG</td><td>Avec perte</td><td>8 bits/canal</td><td>Web, partage, usage courant</td></tr>
-                    <tr><td>TIFF</td><td>Sans perte</td><td>8 ou 16 bits</td><td>Impression, archivage</td></tr>
-                    <tr><td>HEIF</td><td>Moderne avec perte/perte</td><td>10+ bits</td><td>Smartphones (Apple, Android)</td></tr>
-                </tbody>
-            </table>
+        </section>
     </main>
 </body>
 </html>
