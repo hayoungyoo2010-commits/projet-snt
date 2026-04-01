@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>La photographie numérique</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html">Histoire</a>
+            <a href="capteur.html">Capteur</a>
+            <a href="traitement.html">Traitement</a>
+            <a href="exif.html">EXIF</a>
+        </nav>
+    </header>
+    <main>
+        <h1>La photographie numérique</h1>
+        <!-- SECTION MÉTADONNÉES EXIF -->
+    <section id="exif">
+        <div class="card">
+            <h2> 3. Métadonnées EXIF</h2>
+            <div class="img-wrapper">
+                <a href="https://fr.wikipedia.org/wiki/Exchangeable_image_file_format" target="_blank">
+                    <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=800" alt="Appareil photo vintage">
+    </a>
+                <p class="source">Cliquez sur l'image pour lire l’article Wikipédia</p>
+            </div>
+            <p>Les fichiers images contiennent des données cachées : la norme EXIF (Exchangeable Image File Format) stocke de nombreuses informations techniques.</p>
+            <ul>
+                <li> Date et heure de la prise de vue</li>
+                <li> Modèle d’appareil, focale, ouverture, vitesse, ISO</li>
+                <li> Coordonnées GPS (si activé)</li>
+                <li> Mode de mesure, flash, balance des blancs</li>
+            </ul>
+            <h3> Exemples de tags EXIF</h3>
+            <table>
+                <thead><tr><th>Tag</th><th>Description</th><th>Exemple</th></tr></thead>
+                <tbody>
+                    <tr><td>Make / Model</td><td>Fabricant et modèle</td><td>Canon / EOS 5D Mark IV</td></tr>
+                    <tr><td>ExposureTime</td><td>Durée d’exposition (s)</td><td>1/250</td></tr>
+                    <tr><td>FNumber</td><td>Ouverture</td><td>f/5.6</td></tr>
+                    <tr><td>ISOSpeedRatings</td><td>Sensibilité ISO</td><td>800</td></tr>
+                    <tr><td>DateTimeOriginal</td><td>Date/heure d’origine</td><td>2025:03:28 14:35:12</td></tr>
+                    <tr><td>GPSLatitude / GPSLongitude</td><td>Coordonnées</td><td>48° 51' N, 2° 21' E</td></tr>
+                </tbody>
+            </table>
+    </main>
+</body>
+</html>
